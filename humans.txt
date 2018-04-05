@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Senior Front-End Developer: George Wilde
+    Contact: george@wildecreations.co.uk
+    Twitter: @MrGeorgeWilde
+    From: Staffordshire, UK
+
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Canvas theme by SemiColonWeb
