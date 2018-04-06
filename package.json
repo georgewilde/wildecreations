@@ -1,0 +1,12 @@
+{
+    "name": "wilde-creations",
+    "version": "0.0.1",
+    "main": "index.html",
+    "repository": "git@github.com:georgewilde/wildecreations.git",
+    "author": "George Wilde <george@wildecreations.co.uk>",
+    "license": "MIT",
+    "private": false,
+    "devDependencies": {
+        "gulp": "^3.0.0"
+    }
+}
