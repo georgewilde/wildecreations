@@ -12,13 +12,15 @@ const gulpUtil = require('gulp-util');
 const uglify = require('gulp-uglify');
 const buffer = require('vinyl-buffer');
 
-const watchedBrowserify = watchify(browserify({
+const browserifyOptions = {
     basedir: '.',
     debug: true,
     entries: ['src/scripts/main.ts'],
     cache: {},
     packageCache: {},
-})
+};
+
+const watchedBrowserify = watchify(browserify(browserifyOptions)
     .plugin(tsify)
     .transform('babelify', {
         extensions: ['.ts']
@@ -85,8 +87,16 @@ gulp.task('process-vendor-scripts', () => {
         .pipe(gulp.dest(paths.dist.scripts));
 });
 
-function bundle() {
+function bundleTypescriptOnDev() {
     return watchedBrowserify
+        .bundle()
+        .pipe(source('bundle.js'))
+        .pipe(gulp.dest(paths.dist.scripts));
+}
+
+function bundleTypescriptOnProd() {
+    return browserify(browserifyOptions)
+        .plugin(tsify)
         .bundle()
         .pipe(source('bundle.js'))
         .pipe(buffer())
@@ -99,12 +109,19 @@ function bundle() {
         .pipe(gulp.dest(paths.dist.scripts));
 }
 
-gulp.task('default', [
+gulp.task('prod', [
     'copy-images',
     'copy-html',
     'process-styles',
     'process-vendor-scripts',
-], bundle);
+], bundleTypescriptOnProd);
 
-watchedBrowserify.on('update', bundle);
+gulp.task('dev', [
+    'copy-images',
+    'copy-html',
+    'process-styles',
+    'process-vendor-scripts',
+], bundleTypescriptOnDev);
+
+watchedBrowserify.on('update', bundleTypescriptOnDev);
 watchedBrowserify.on('log', gulpUtil.log);
