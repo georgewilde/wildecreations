@@ -1,3 +1,15 @@
+body {
+    font-family: Raleway, sans-serif;
+}
+
+a {
+    color: #e6e6e6;
+
+    &:hover {
+        color: #FFF;
+    }
+}
+
 .background {
     &--full {
         background: #3B88B1 url("images/home-page-background.jpg") no-repeat center center fixed;
@@ -9,8 +21,5 @@
     margin-left: 100px;
     margin-top: 370px;
     color: #FFF;
-
-    .name {
-
-    }
+    text-shadow: 0 0 5px rgba(33, 42, 60, 0.43);
 }
