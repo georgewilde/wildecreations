@@ -21,12 +21,12 @@
         <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
         <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
         <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="36x36"  href="images/icons/android-icon-36x36.png">
-        <link rel="icon" type="image/png" sizes="48x48"  href="images/icons/android-icon-48x48.png">
-        <link rel="icon" type="image/png" sizes="72x72"  href="images/icons/android-icon-72x72.png">
-        <link rel="icon" type="image/png" sizes="96x96"  href="images/icons/android-icon-96x96.png">
-        <link rel="icon" type="image/png" sizes="144x144"  href="images/icons/android-icon-144x144.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="36x36" href="images/icons/android-icon-36x36.png">
+        <link rel="icon" type="image/png" sizes="48x48" href="images/icons/android-icon-48x48.png">
+        <link rel="icon" type="image/png" sizes="72x72" href="images/icons/android-icon-72x72.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/icons/android-icon-96x96.png">
+        <link rel="icon" type="image/png" sizes="144x144" href="images/icons/android-icon-144x144.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-icon-192x192.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
@@ -34,18 +34,27 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700">
         <link rel="stylesheet" href="bundle.css">
     </head>
-    <body class="stretched">
+    <body class="background--full">
         <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-        <p>Wilde creations is currently being updated. If you would like to talk about a development project, please email <a href="mailto:george@wildecreations.co.uk">George Wilde</a>.</p>
 
+        <div class="container-fluid">
+            <div class="content">
+                <h1 class="name">Wilde Creations</h1>
+                <h4>Wilde creations is currently being updated. If you would like to talk about a development project, please email <a href="mailto:george@wildecreations.co.uk">George Wilde</a>.</h4>
+            </div>
+        </div>
         <script src="vendor-bundle.js"></script>
         <script src="bundle.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116550466-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
             gtag('js', new Date());
             gtag('config', 'UA-116550466-1');
         </script>
