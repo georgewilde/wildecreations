@@ -1,12 +1,29 @@
 {
-    "name": "wilde-creations",
+    "name": "wilde-creations-site",
     "version": "0.0.1",
     "main": "index.html",
     "repository": "git@github.com:georgewilde/wildecreations.git",
     "author": "George Wilde <george@wildecreations.co.uk>",
     "license": "MIT",
     "private": false,
+    "dependencies": {},
     "devDependencies": {
-        "gulp": "^3.0.0"
+        "babel-core": "^6.26.0",
+        "babel-preset-env": "^1.6.0",
+        "babelify": "^8.0.0",
+        "browserify": "^16.1.0",
+        "gulp": "^3.0.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-minify": "^2.1.0",
+        "gulp-minify-css": "^1.2.0",
+        "gulp-sass": "^4.0.0",
+        "gulp-sourcemaps": "^2.6.0",
+        "gulp-uglify": "^3.0.0",
+        "gulp-util": "^3.0.0",
+        "tsify": "^3.0.4",
+        "typescript": "^2.8.0",
+        "vinyl-buffer": "^1.0.0",
+        "vinyl-source-stream": "^2.0.0",
+        "watchify": "^3.11.0"
     }
 }
