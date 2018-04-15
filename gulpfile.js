@@ -11,6 +11,7 @@ const watchify = require('watchify');
 const gulpUtil = require('gulp-util');
 const uglify = require('gulp-uglify');
 const buffer = require('vinyl-buffer');
+const autoprefixer = require('gulp-autoprefixer');
 const paths = require('./build/paths');
 
 const browserifyOptions = {
@@ -41,6 +42,9 @@ gulp.task('process-styles', () => {
     return gulp.src(paths.source.styles)
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+        }))
         .pipe(concat('./bundle.css'))
         .pipe(minifyCss())
         .pipe(sourcemaps.write('./'))
