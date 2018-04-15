@@ -11,6 +11,7 @@ const watchify = require('watchify');
 const gulpUtil = require('gulp-util');
 const uglify = require('gulp-uglify');
 const buffer = require('vinyl-buffer');
+const paths = require('./build/paths');
 
 const browserifyOptions = {
     basedir: '.',
@@ -25,33 +26,6 @@ const watchedBrowserify = watchify(browserify(browserifyOptions)
     .transform('babelify', {
         extensions: ['.ts']
     }));
-
-const paths = {
-    source: {
-        styles: [
-            './src/styles/vendor/normalize.css',
-            './src/styles/vendor/html5-boilerplate.css',
-            './src/styles/vendor/bootstrap.css',
-            './src/styles/main.scss',
-        ],
-        images: [
-            './src/images/**',
-        ],
-        scripts: [
-            './src/scripts/vendor/modernizr-3.5.0.min.js',
-            './src/scripts/vendor/jquery-3.2.1.min.js',
-        ],
-        pages: [
-            './src/**/*.html',
-        ],
-    },
-    dist: {
-        styles: './dist',
-        images: './dist/images',
-        scripts: './dist',
-        pages: './dist',
-    }
-};
 
 gulp.task('copy-images', () => {
     return gulp.src(paths.source.images)
@@ -122,6 +96,20 @@ gulp.task('dev', [
     'process-styles',
     'process-vendor-scripts',
 ], bundleTypescriptOnDev);
+
+gulp.task('watch-images', () => {
+    gulp.watch(paths.source.images, ['copy-images'])
+});
+
+gulp.task('watch-html', () => {
+    gulp.watch(paths.source.pages, ['copy-html'])
+});
+
+gulp.task('watch-styles', () => {
+    gulp.watch(paths.source.styles, ['process-styles'])
+});
+
+gulp.task('default', ['dev', 'watch-images', 'watch-html', 'watch-styles']);
 
 watchedBrowserify.on('update', bundleTypescriptOnDev);
 watchedBrowserify.on('log', gulpUtil.log);
