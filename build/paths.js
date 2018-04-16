@@ -3,7 +3,6 @@ module.exports = {
         styles: [
             './src/styles/vendor/normalize.css',
             './src/styles/vendor/html5-boilerplate.css',
-            './src/styles/vendor/bootstrap.css',
             './src/styles/main.scss',
         ],
         images: [

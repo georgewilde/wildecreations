@@ -1,12 +1,14 @@
+@import "~bootstrap/scss/bootstrap";
+
 body {
     font-family: Raleway, sans-serif;
 }
 
 a {
-    color: #e6e6e6;
+    color: $gray-300;
 
     &:hover {
-        color: #FFF;
+        color: $white;
     }
 }
 
@@ -20,6 +22,6 @@ a {
 .content {
     margin-left: 100px;
     margin-top: 370px;
-    color: #FFF;
+    color: $white;
     text-shadow: 0 0 5px rgba(33, 42, 60, 0.43);
 }

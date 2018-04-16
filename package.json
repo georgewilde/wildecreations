@@ -6,7 +6,9 @@
     "author": "George Wilde <george@wildecreations.co.uk>",
     "license": "MIT",
     "private": false,
-    "dependencies": {},
+    "dependencies": {
+        "bootstrap": "^4.1.0"
+    },
     "devDependencies": {
         "babel-core": "^6.26.0",
         "babel-preset-env": "^1.6.0",

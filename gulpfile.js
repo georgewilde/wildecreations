@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const tildeImporter = require('node-sass-tilde-importer');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
 const minifyCss = require('gulp-minify-css');
@@ -41,7 +42,10 @@ gulp.task('copy-html', () => {
 gulp.task('process-styles', () => {
     return gulp.src(paths.source.styles)
         .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({
+            importer: tildeImporter,
+        })
+            .on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
         }))
