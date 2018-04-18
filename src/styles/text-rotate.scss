@@ -1,0 +1,9 @@
+.text-rotate {
+    &__content {
+        display: none;
+
+        &--first {
+            display: block;
+        }
+    }
+}

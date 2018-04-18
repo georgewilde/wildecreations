@@ -8,9 +8,12 @@ module.exports = {
         images: [
             './src/images/**',
         ],
+        fonts: [
+            './src/fonts/**',
+        ],
         scripts: [
             './src/scripts/vendor/modernizr-3.5.0.min.js',
-            './src/scripts/vendor/jquery-3.2.1.min.js',
+            './node_modules/jquery/dist/jquery.min.js',
         ],
         pages: [
             './src/**/*.html',
@@ -19,6 +22,7 @@ module.exports = {
     dist: {
         styles: './dist',
         images: './dist/images',
+        fonts: './dist/fonts',
         scripts: './dist',
         pages: './dist',
     }

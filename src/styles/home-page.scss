@@ -1,0 +1,58 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    font-family: Raleway, sans-serif;
+}
+
+a {
+    color: $gray-300;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+/* TEMP */
+.background {
+    &--full {
+        background: #3B88B1 url("images/home-page-background.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+
+.content {
+    margin-left: 100px;
+    margin-top: 370px;
+    color: $white;
+    text-shadow: 0 0 5px rgba(33, 42, 60, 0.43);
+}
+
+/* Main */
+.navbar {
+    border-bottom-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.section {
+    &--header {
+        .container {
+            height: 100%;
+        }
+
+        .parallax {
+            &__content {
+                top: 43%;
+            }
+
+            &__background {
+                background: #FFF url(https://images.unsplash.com/photo-1463412855783-af97e375664b?iq=100&fm=jpg&w=1000);
+                background-size: cover;
+                background-position: center center;
+                height: 100vh;
+            }
+        }
+    }
+}
+
+.text-shadow-sm {
+    text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}

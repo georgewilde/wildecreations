@@ -34,6 +34,11 @@ gulp.task('copy-images', () => {
         .pipe(gulp.dest(paths.dist.images));
 });
 
+gulp.task('copy-fonts', () => {
+    return gulp.src(paths.source.fonts)
+        .pipe(gulp.dest(paths.dist.fonts));
+});
+
 gulp.task('copy-html', () => {
     return gulp.src(paths.source.pages)
         .pipe(gulp.dest(paths.dist.pages));
@@ -93,6 +98,7 @@ function bundleTypescriptOnProd() {
 
 gulp.task('prod', [
     'copy-images',
+    'copy-fonts',
     'copy-html',
     'process-styles',
     'process-vendor-scripts',
@@ -100,24 +106,21 @@ gulp.task('prod', [
 
 gulp.task('dev', [
     'copy-images',
+    'copy-fonts',
     'copy-html',
     'process-styles',
     'process-vendor-scripts',
 ], bundleTypescriptOnDev);
-
-gulp.task('watch-images', () => {
-    gulp.watch(paths.source.images, ['copy-images'])
-});
 
 gulp.task('watch-html', () => {
     gulp.watch(paths.source.pages, ['copy-html'])
 });
 
 gulp.task('watch-styles', () => {
-    gulp.watch(paths.source.styles, ['process-styles'])
+    gulp.watch('./src/styles/*.scss', ['process-styles'])
 });
 
-gulp.task('default', ['dev', 'watch-images', 'watch-html', 'watch-styles']);
+gulp.task('default', ['dev', 'watch-html', 'watch-styles']);
 
 watchedBrowserify.on('update', bundleTypescriptOnDev);
 watchedBrowserify.on('log', gulpUtil.log);
