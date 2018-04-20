@@ -1,17 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
 
-body {
-    font-family: Raleway, sans-serif;
-}
-
-a {
-    color: $gray-300;
-
-    &:hover {
-        color: $white;
-    }
-}
-
 /* TEMP */
 .background {
     &--full {
@@ -30,6 +18,31 @@ a {
 /* Main */
 .navbar {
     border-bottom-color: rgba(255, 255, 255, 0.15) !important;
+
+    &:not(.bg-white) {
+        .navbar-toggler {
+            color: rgba(255, 255, 255, .8);
+            border-color: rgba(255, 255, 255, .8);
+
+            &-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255, 255, 255, .8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+            }
+        }
+    }
+
+    &--small {
+        .logo {
+            @include media-breakpoint-up(lg) {
+                height: 45px;
+                top: 15px;
+            }
+        }
+
+        .nav-link {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+    }
 }
 
 .section {
@@ -45,6 +58,8 @@ a {
 
             &__background {
                 background: #FFF url(https://images.unsplash.com/photo-1463412855783-af97e375664b?iq=100&fm=jpg&w=1000);
+                //https://source.unsplash.com/wRuZ-Nbl6mo/1600x900
+
                 background-size: cover;
                 background-position: center center;
                 height: 100vh;
@@ -53,6 +68,15 @@ a {
     }
 }
 
-.text-shadow-sm {
-    text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+.logo {
+    position: absolute;
+    left: 10px;
+    height: 35px;
+    top: 11px;
+
+    @include media-breakpoint-up(lg) {
+        top: 25px;
+        height: 56px;
+        left: 30px;
+    }
 }
