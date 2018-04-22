@@ -6,9 +6,11 @@ export class Animations {
         this.homeTitle();
     }
 
+
+
     private navbarScroll(): void {
         this.$window.on('scroll', () => {
-            if (this.$window.scrollTop() > 300) {
+            if (this.$window.scrollTop() > 700) {
                 $('.navbar')
                     .addClass('bg-white')
                     .removeClass('bg-transparent')
@@ -30,11 +32,8 @@ export class Animations {
 
     private homeTitle(): void {
         this.$window.on('scroll', () => {
-            if (this.$window.scrollTop() > 300) {
-                $('.home__intro__text').addClass('fadeOut');
-            } else {
-                $('.home__intro__text').removeClass('fadeOut');
-            }
+            const opacity = 1.1 - (this.$window.scrollTop() / 500);
+            $('.parallax__content').css('opacity', `${opacity}`);
         });
     }
 }

@@ -45,17 +45,10 @@
     }
 }
 
+
 .section {
-    &--header {
-        .container {
-            height: 100%;
-        }
-
+    &--home {
         .parallax {
-            &__content {
-                top: 43%;
-            }
-
             &__background {
                 background: #FFF url(https://images.unsplash.com/photo-1463412855783-af97e375664b?iq=100&fm=jpg&w=1000);
                 //https://source.unsplash.com/wRuZ-Nbl6mo/1600x900
@@ -64,6 +57,16 @@
                 background-position: center center;
                 height: 100vh;
             }
+        }
+
+        &__intro {
+            top: 43%;
+        }
+
+        &__scroll-down {
+            top: 90%;
+            left: calc(50vw - 25px);
+            width: 50px;
         }
     }
 }
@@ -80,3 +83,5 @@
         left: 30px;
     }
 }
+
+
