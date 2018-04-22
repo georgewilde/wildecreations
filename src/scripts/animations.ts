@@ -2,13 +2,11 @@ export class Animations {
     private $window: JQuery = $(window);
 
     public initialise(): void {
-        this.navbarScroll();
+        this.navbarResize();
         this.homeTitle();
     }
 
-
-
-    private navbarScroll(): void {
+    private navbarResize(): void {
         this.$window.on('scroll', () => {
             if (this.$window.scrollTop() > 700) {
                 $('.navbar')

@@ -38,10 +38,10 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <nav class="navbar navbar-expand-lg navbar-light border-bottom fixed-top animated animated--fast bg-transparent" role="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom fixed-top bg-transparent" role="navigation">
             <a href="#" class="navbar-brand">
-                <img class="logo logo--color animated" src="images/logo.png" alt="Logo" aria-hidden="true">
-                <img class="logo logo--white animated" src="images/logo-white.png" alt="Logo">
+                <img class="logo logo--color animated animated--fast" src="images/logo.png" alt="Logo" aria-hidden="true">
+                <img class="logo logo--white animated animated--fast" src="images/logo-white.png" alt="Logo">
             </a>
 
             <button class="navbar-toggler"
@@ -56,13 +56,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active p-2">
-                        <a href="#" class="nav-link animated text-white">HOME</a>
+                        <a href="#home" class="nav-link animated animated--fast text-white page-scroll-link">HOME</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="#about" class="nav-link animated animated--fast text-white page-scroll-link">ABOUT</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <section class="section section--home parallax home">
+        <section class="section section--home parallax home" id="home">
             <div class="parallax__background position-fixed w-100">
                 <div class="parallax__content section--home__intro position-absolute w-100 text-white text-center text-shadow-sm">
                     <h1 class="font-weight-bold home__intro__text animated fadeIn">
@@ -82,7 +85,7 @@
         </section>
 
 
-        <div class="container-fluid">
+        <div class="container-fluid" id="about">
             <section class="row">
                 <div class="col bg-white">
                     <h1>Here is some content</h1>
@@ -121,16 +124,16 @@
 
         <script src="vendor-bundle.js"></script>
         <script src="bundle.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116550466-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
+        <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116550466-1"></script>-->
+        <!--<script>-->
+            <!--window.dataLayer = window.dataLayer || [];-->
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+            <!--function gtag() {-->
+                <!--dataLayer.push(arguments);-->
+            <!--}-->
 
-            gtag('js', new Date());
-            gtag('config', 'UA-116550466-1');
-        </script>
+            <!--gtag('js', new Date());-->
+            <!--gtag('config', 'UA-116550466-1');-->
+        <!--</script>-->
     </body>
 </html>

@@ -7,7 +7,7 @@ export class Parallex {
             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         });
 
-        $('.parallax__background').each((index, element): void => {
+        $('.parallax__background').each((index: number, element: HTMLElement): void => {
             $window.on('scroll resize', () => {
                 $(element).css({transform: `translateY(-${scrollTop * 0.5}px)`});
             });
