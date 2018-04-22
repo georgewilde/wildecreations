@@ -1,17 +1,5 @@
 @import '~bootstrap/scss/_variables.scss';
 
-body {
-    font-family: Raleway, sans-serif;
-}
-
-a {
-    color: $gray-300;
-
-    &:hover {
-        color: $white;
-    }
-}
-
 .text-shadow-sm {
     text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
 }
@@ -25,11 +13,10 @@ a {
         background-color: transparent;
         color: $white;
         border: 2px solid $white;
+
+        &:hover {
+            background-color: $white;
+            color: $gray-800;
+        }
     }
 }
-
-
-
-
-
-

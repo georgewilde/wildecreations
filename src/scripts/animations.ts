@@ -1,4 +1,12 @@
 export class Animations {
+    private static makeNavbarTransparent(): void {
+        $('.navbar')
+            .addClass('bg-white')
+            .removeClass('bg-transparent');
+        $('.logo--white').addClass('transparent');
+        $('.nav-link, .navbar-toggler-icon').removeClass('text-white');
+    }
+
     private $window: JQuery = $(window);
 
     public initialise(): void {
@@ -8,15 +16,17 @@ export class Animations {
 
     private navbarResize(): void {
         this.$window.on('scroll', () => {
-            if (this.$window.scrollTop() > 700) {
-                $('.navbar')
-                    .addClass('bg-white')
-                    .removeClass('bg-transparent')
-                    .addClass('navbar--small');
+            const scrollTop = this.$window.scrollTop();
 
-                $('.logo--white').addClass('transparent');
-                $('.nav-link, .navbar-toggler-icon').removeClass('text-white');
-            } else {
+            if (scrollTop > 875) {
+                $('.navbar').addClass('navbar--small');
+            }
+
+            if (scrollTop > 865) {
+                Animations.makeNavbarTransparent();
+            }
+
+            if (scrollTop < 865) {
                 $('.navbar')
                     .removeClass('bg-white')
                     .addClass('bg-transparent')

@@ -11,12 +11,26 @@ export class PageScroll {
         this.$pageScrollLink.on('click', (event: any) => {
             event.preventDefault();
 
-            const target = event.currentTarget.hash;
-            const navigationOffset = ('#home' === target) ? 0 : 112;
+            const target: string = event.currentTarget.hash;
+            let navigationOffset: number;
+
+            switch (target) {
+                case '#home':
+                    navigationOffset = 0;
+                    break;
+
+                case '#skills':
+                    navigationOffset = 104;
+                    break;
+
+                default:
+                    navigationOffset = 72;
+                    break;
+            }
 
             $('body, html').animate({
-                scrollTop: $(target).offset().top + navigationOffset,
-            }, 600);
+                scrollTop: $(target).offset().top - navigationOffset,
+            }, 400);
         });
     }
 
@@ -35,6 +49,3 @@ export class PageScroll {
         });
     }
 }
-
-
-
