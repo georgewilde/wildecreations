@@ -45,7 +45,6 @@
     }
 }
 
-
 .section {
     &--home {
         .parallax {
@@ -81,4 +80,29 @@
         height: 56px;
         left: 30px;
     }
+}
+
+.col {
+    &--skills {
+        min-height: calc(100vh - 104px);
+
+        .card-subtitle {
+            color: $gray-500;
+        }
+    }
+
+    &--about,
+    &--projects,
+    &--blog,
+    &--contact {
+        min-height: calc(100vh - 72px);
+    }
+}
+
+.skills-logo {
+    height: 45px;
+}
+
+.profile-image {
+    height: 400px;
 }

@@ -1,5 +1,12 @@
 export class Parallex {
-    public static initialise(): void {
+    private $window: JQuery = $(window);
+
+    public initialise(): void {
+       this.background();
+       this.content();
+    }
+
+    private background(): void {
         const $window: JQuery = $(window);
         let scrollTop: number = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -14,5 +21,13 @@ export class Parallex {
         });
 
         $window.trigger('scroll');
+    }
+
+    private content(): void {
+        this.$window.on('scroll', () => {
+            const opacity = 1.1 - (this.$window.scrollTop() / 500);
+
+            $('.parallax__content').css('opacity', `${opacity}`);
+        });
     }
 }

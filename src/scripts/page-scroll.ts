@@ -1,6 +1,9 @@
 export class PageScroll {
     private $pageScrollLink: JQuery = $('.page-scroll-link');
     private $window: JQuery = $(window);
+    private initialNavbarHeight: number = $('.navbar').outerHeight();
+    private smallNavbarHeight: number = 72;
+    private scrollAnimationDuration: number = 400;
 
     public initialise() {
         this.scrollToPage();
@@ -20,17 +23,17 @@ export class PageScroll {
                     break;
 
                 case '#skills':
-                    navigationOffset = 104;
+                    navigationOffset = this.initialNavbarHeight;
                     break;
 
                 default:
-                    navigationOffset = 72;
+                    navigationOffset = this.smallNavbarHeight;
                     break;
             }
 
             $('body, html').animate({
                 scrollTop: $(target).offset().top - navigationOffset,
-            }, 400);
+            }, this.scrollAnimationDuration);
         });
     }
 
@@ -39,7 +42,13 @@ export class PageScroll {
             const scrollbarLocation = this.$window.scrollTop();
 
             this.$pageScrollLink.each((index: number, element: any) => {
-                const pageOffset = $(element.hash).offset().top - 20;
+                let navbarHeight: number = this.smallNavbarHeight;
+
+                if ('#skills' === element.hash) {
+                    navbarHeight = this.initialNavbarHeight;
+                }
+
+                const pageOffset = $(element.hash).offset().top - navbarHeight;
 
                 if (pageOffset <= scrollbarLocation) {
                     $(element).parent().addClass('active');

@@ -38,7 +38,7 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <nav class="navbar navbar-expand-lg navbar-light border-bottom fixed-top bg-transparent" role="navigation">
+        <nav class="navbar navbar-expand-md navbar-light border-bottom fixed-top bg-transparent" role="navigation">
             <a href="#" class="navbar-brand">
                 <img class="logo logo--color animated animated--fast position-absolute" src="images/logo.png" alt="Logo" aria-hidden="true">
                 <img class="logo logo--white animated animated--fast position-absolute" src="images/logo-white.png" alt="Logo">
@@ -60,6 +60,9 @@
                     </li>
                     <li class="nav-item p-2">
                         <a href="#skills" class="nav-link animated animated--fast text-white page-scroll-link">SKILLS</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="#about" class="nav-link animated animated--fast text-white page-scroll-link">ABOUT</a>
                     </li>
                     <li class="nav-item p-2">
                         <a href="#projects" class="nav-link animated animated--fast text-white page-scroll-link">PROJECTS</a>
@@ -88,23 +91,209 @@
                     </h1>
                     <a href="#projects" class="btn btn-transparent mt-5 rounded-0 page-scroll-link">view projects</a>
                 </div>
-                <a href class="parallax__content section--home__scroll-down h4 position-absolute text-white animated animated--slow fadeInDown infinite"><i class="icon-down-big"></i></a>
+                <a href="#skills" class="parallax__content section--home__scroll-down h4 position-absolute text-white animated animated--slow fadeInDown infinite page-scroll-link"><i
+                    class="icon-down-big"></i></a>
             </div>
         </section>
 
         <section class="container-fluid" id="skills">
             <div class="row">
-                <div class="col bg-white">
-                    <h1>Front-end web development</h1>
-                    <h2>Whether your project needs a top notch Angular developer, a cutting edge React ninja or just someone to develop some good old JavaScript, HTML and CSS, Wilde Creations can help you.</h2>
-                    <p>Providing first class front-end development skills on a contract basis across the UK, Wilde Creations has over 14 years experience to help you bring your project to the world.</p>
+                <div class="col col--skills bg-white">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h1 class="mt-5">Skills & Expertise</h1>
+                            <h2 class="font-italic font-playfair mb-5">front-end web development</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col col-10 text-center">
+                            <p>Whether your project needs a top notch <span class="font-weight-bold">Angular</span> developer, a cutting edge <span class="font-weight-bold">React</span> ninja or just
+                                someone to develop some plain old <span class="font-weight-bold">JavaScript</span>, <span class="font-weight-bold">HTML</span> & <span
+                                    class="font-weight-bold">CSS</span>, Wilde Creations can help you.</p>
+                            <p>Providing first class front-end development skills on a contract basis across the UK, Wilde Creations has over 14 years experience to help you bring your project to the
+                                world.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-8 offset-md-2 mb-3">
+                            <div class="card-deck">
+                                <div class="card text-center">
+                                    <h5 class="card-title mt-2">JavaScript</h5>
+                                    <h6 class="card-subtitle font-italic font-tinos">14 years experience</h6>
+                                    <div class="card-body p-3">
+                                        <img src="images/skills-logos/javascript.svg" alt="JavaScript logo" class="skills-logo">
+                                    </div>
+                                </div>
+                                <div class="card text-center">
+                                    <h5 class="card-title mt-2">Angular</h5>
+                                    <h6 class="card-subtitle font-italic font-tinos">4 years experience</h6>
+                                    <div class="card-body p-3">
+                                        <img src="images/skills-logos/angular.svg" alt="Angular logo" class="skills-logo">
+                                    </div>
+                                </div>
+                                <div class="card text-center">
+                                    <h5 class="card-title mt-2">TypeScript</h5>
+                                    <h6 class="card-subtitle font-italic font-tinos">4 years experience</h6>
+                                    <div class="card-body p-3">
+                                        <img src="images/skills-logos/typescript.svg" alt="Typescript logo" class="skills-logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2 mb-3">
+                            <div class="card-deck">
+                                <div class="card text-center">
+                                    <h5 class="card-title mt-2">HTML5</h5>
+                                    <h6 class="card-subtitle font-italic font-tinos">14 years experience</h6>
+                                    <div class="card-body p-3">
+                                        <img src="images/skills-logos/html.svg" alt="HTML5 logo" class="skills-logo">
+                                    </div>
+                                </div>
+                                <div class="card text-center">
+                                    <h5 class="card-title mt-2">CSS3</h5>
+                                    <h6 class="card-subtitle font-italic font-tinos">14 years experience</h6>
+                                    <div class="card-body p-3">
+                                        <img src="images/skills-logos/css.svg" alt="CSS3 logo" class="skills-logo">
+                                    </div>
+                                </div>
+
+                                <div class="card text-center">
+                                    <h5 class="card-title mt-2">React</h5>
+                                    <h6 class="card-subtitle font-italic font-tinos">1 years experience</h6>
+                                    <div class="card-body p-3">
+                                        <img src="images/skills-logos/react.svg" alt="React logo" class="skills-logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2 mb-3">
+                            <div class="card-deck">
+                                <div class="card text-center">
+                                    <h5 class="card-title mt-2">Bootstrap</h5>
+                                    <h6 class="card-subtitle font-italic font-tinos">6 years experience</h6>
+                                    <div class="card-body p-3">
+                                        <img src="images/skills-logos/bootstrap.svg" alt="Bootstrap logo" class="skills-logo">
+                                    </div>
+                                </div>
+                                <div class="card text-center">
+                                    <h5 class="card-title mt-2">Vue.js</h5>
+                                    <h6 class="card-subtitle font-italic font-tinos">1 years experience</h6>
+                                    <div class="card-body p-3">
+                                        <img src="images/skills-logos/vue.svg" alt="Vue logo" class="skills-logo">
+                                    </div>
+                                </div>
+                                <div class="card text-center">
+                                    <h5 class="card-title mt-2">Node</h5>
+                                    <h6 class="card-subtitle font-italic font-tinos">2 years experience</h6>
+                                    <div class="card-body p-3">
+                                        <img src="images/skills-logos/node.svg" alt="Node logo" class="skills-logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid" id="about">
+            <div class="row">
+                <div class="col bg-white col--about">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h1 class="mt-5">About</h1>
+                            <h2 class="font-italic font-playfair mb-5">George Wilde</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h6>Overview</h6>
+                            <p>I am a senior front end developer with over 14 years of commercial experience building service-oriented web applications.</p>
+                            <p>Using JavaScript, Angular, TypeScript, HTML5 and CSS3 I have led the development of many high-performance and responsive websites across various industries.</p>
+                            <p>I have extensive experience in Angular 2-5, AngularJS, Redux (NgRx) and many responsive frameworks such as Bootstrap, Foundation, PureCSS.</p>
+                            <p>I am passionate about delivering high-quality solutions fast and am a huge advocate for Continuous Delivery. I am also comfortable working in a Scrum or Kanban
+                                environment.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <h6>Technologies</h6>
+                            <p>Front-end technologies I have recent or extensive experience include:</p>
+                            <ul class="list-inline font-italic font-tinos">
+                                <li class="list-inline-item">JavaScript</li>
+                                <li class="list-inline-item">Angular</li>
+                                <li class="list-inline-item">AngularJS</li>
+                                <li class="list-inline-item">TypeScript</li>
+                                <li class="list-inline-item">NgRx</li>
+                                <li class="list-inline-item">Redux</li>
+                                <li class="list-inline-item">React.js</li>
+                                <li class="list-inline-item">Vue.js</li>
+                                <li class="list-inline-item">jQuery</li>
+                                <li class="list-inline-item">Backbone</li>
+                                <li class="list-inline-item">HTML5</li>
+                                <li class="list-inline-item">CSS3</li>
+                                <li class="list-inline-item">Less</li>
+                                <li class="list-inline-item">SASS</li>
+                                <li class="list-inline-item">Webpack</li>
+                                <li class="list-inline-item">Gulp</li>
+                                <li class="list-inline-item">Git</li>
+                                <li class="list-inline-item">SVN</li>
+                                <li class="list-inline-item">Bootstrap</li>
+                                <li class="list-inline-item">Foundation</li>
+                                <li class="list-inline-item">PureCSS</li>
+                                <li class="list-inline-item">Rest APIs</li>
+                                <li class="list-inline-item">GraphQL</li>
+                                <li class="list-inline-item">Swagger Codegen</li>
+                            </ul>
+
+                            <p class="mt-4">Testing frameworks I have recent or extensive experience include:</p>
+                            <ul class="list-inline font-italic font-tinos">
+                                <li class="list-inline-item">Karma</li>
+                                <li class="list-inline-item">Jasmine</li>
+                                <li class="list-inline-item">Mocha</li>
+                                <li class="list-inline-item">Chai</li>
+                                <li class="list-inline-item">Jest</li>
+                                <li class="list-inline-item">Nightwatch</li>
+                                <li class="list-inline-item">Selenium</li>
+                                <li class="list-inline-item">Protractor</li>
+                            </ul>
+
+                            <p class="mt-4">Additionally, I have substantial back-end development experience, including:</p>
+                            <ul class="list-inline font-italic font-tinos">
+                                <li class="list-inline-item">Node</li>
+                                <li class="list-inline-item">PHP</li>
+                                <li class="list-inline-item">Laravel</li>
+                                <li class="list-inline-item">MySQL</li>
+                                <li class="list-inline-item">PostgreSQL</li>
+                                <li class="list-inline-item">C#</li>
+                            </ul>
+
+                            <p class="mt-4">Methodologies I am passionate about include:</p>
+                            <ul class="list-inline font-italic font-tinos">
+                                <li class="list-inline-item">Agile</li>
+                                <li class="list-inline-item">TDD</li>
+                                <li class="list-inline-item">XP</li>
+                                <li class="list-inline-item">Build Automation</li>
+                                <li class="list-inline-item">Continuous Delivery</li>
+                                <li class="list-inline-item">Scrum</li>
+                                <li class="list-inline-item">Clean Code</li>
+                                <li class="list-inline-item">SOLID</li>
+                                <li class="list-inline-item">DDD</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="images/profile.jpg" alt="George Wilde" class="profile-image">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="container-fluid" id="projects">
             <div class="row">
-                <div class="col bg-white">
+                <div class="col bg-white col--projects">
                     <h1>Projects</h1>
                     <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall
                         value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
@@ -114,7 +303,7 @@
 
         <section class="container-fluid" id="blog">
             <div class="row">
-                <div class="col bg-white">
+                <div class="col bg-white col--blog">
                     <h1>Blog</h1>
                     <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall
                         value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
@@ -124,7 +313,7 @@
 
         <section class="container-fluid" id="contact">
             <div class="row">
-                <div class="col bg-white">
+                <div class="col bg-white col--contact">
                     <h1>Get in touch</h1>
                     <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall
                         value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
