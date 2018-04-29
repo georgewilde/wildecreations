@@ -34,6 +34,11 @@ gulp.task('copy-images', () => {
         .pipe(gulp.dest(paths.dist.images));
 });
 
+gulp.task('copy-videos', () => {
+    return gulp.src(paths.source.videos)
+        .pipe(gulp.dest(paths.dist.videos));
+});
+
 gulp.task('copy-fonts', () => {
     return gulp.src(paths.source.fonts)
         .pipe(gulp.dest(paths.dist.fonts));
@@ -98,6 +103,7 @@ function bundleTypescriptOnProd() {
 
 gulp.task('prod', [
     'copy-images',
+    'copy-videos',
     'copy-fonts',
     'copy-html',
     'process-styles',
@@ -106,6 +112,7 @@ gulp.task('prod', [
 
 gulp.task('dev', [
     'copy-images',
+    'copy-videos',
     'copy-fonts',
     'copy-html',
     'process-styles',

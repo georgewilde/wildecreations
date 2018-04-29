@@ -49,12 +49,11 @@
     &--home {
         .parallax {
             &__background {
-                background: #FFF url(https://images.unsplash.com/photo-1463412855783-af97e375664b?iq=100&fm=jpg&w=1000);
-                //https://source.unsplash.com/wRuZ-Nbl6mo/1600x900
-
-                background-size: cover;
-                background-position: center center;
                 height: 100vh;
+                overflow: hidden;
+                //background: #FFF url("images/team-work.jpg");
+                //background-size: cover;
+                //background-position: center center;
             }
         }
 

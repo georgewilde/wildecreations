@@ -9,6 +9,9 @@ module.exports = {
         images: [
             './src/images/**',
         ],
+        videos: [
+            './src/videos/**',
+        ],
         fonts: [
             './src/fonts/**',
         ],
@@ -24,6 +27,7 @@ module.exports = {
     dist: {
         styles: './dist',
         images: './dist/images',
+        videos: './dist/videos',
         fonts: './dist/fonts',
         scripts: './dist',
         pages: './dist',
