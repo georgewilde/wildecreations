@@ -1,5 +1,9 @@
 @import '~bootstrap/scss/_variables.scss';
 
+body {
+    overflow-x: hidden;
+}
+
 p,
 ul {
     color: $gray-600;
