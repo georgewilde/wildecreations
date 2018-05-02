@@ -65,16 +65,6 @@
     font-style: normal;
 }
 
-.font-playfair {
-    font-family: "Playfair Display", serif;
-}
-
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/playfair-display/PlayfairDisplay-Italic.ttf');
-    font-style: italic;
-}
-
 .font-tinos {
     font-family: "Tinos", serif;
 }
@@ -82,5 +72,15 @@
 @font-face {
     font-family: 'Tinos';
     src: url('fonts/tinos/Tinos-Italic.ttf');
+    font-style: italic;
+}
+
+.font-lora {
+    font-family: "Lora", serif;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('fonts/lora/Lora-Italic.ttf');
     font-style: italic;
 }
