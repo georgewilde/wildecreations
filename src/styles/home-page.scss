@@ -1,4 +1,6 @@
-@import "~bootstrap/scss/bootstrap";
+//@import "~bootstrap/scss/bootstrap";
+
+
 
 /* TEMP */
 .background {
@@ -93,6 +95,11 @@
             top: 90%;
             left: calc(50vw - 25px);
             width: 50px;
+        }
+
+        &__video-controls {
+            top: 90%;
+            left: 30px;
         }
     }
 }

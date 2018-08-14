@@ -42,13 +42,13 @@ export class PageScroll {
             const scrollbarLocation = this.$window.scrollTop();
 
             this.$pageScrollLink.each((index: number, element: any) => {
-                let navbarHeight: number = this.smallNavbarHeight;
+                let additionalOffset: number = this.smallNavbarHeight + 100;
 
                 if ('#skills' === element.hash) {
-                    navbarHeight = this.initialNavbarHeight;
+                    additionalOffset = this.initialNavbarHeight + 100;
                 }
 
-                const pageOffset = $(element.hash).offset().top - navbarHeight;
+                const pageOffset = $(element.hash).offset().top - additionalOffset;
 
                 if (pageOffset <= scrollbarLocation) {
                     $(element).parent().addClass('active');

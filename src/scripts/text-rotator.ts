@@ -6,7 +6,7 @@ export class TextRotator {
 
     public constructor() {
         this.fadeSpeed = 300;
-        this.pauseSpeed = 5000;
+        this.pauseSpeed = 2000;
     }
 
     public initialise(): void {
