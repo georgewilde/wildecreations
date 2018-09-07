@@ -445,9 +445,27 @@
                 <div class="row">
                     <div class="col bg-white col--contact">
                         <h1>Get in touch</h1>
-                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the
-                            overall
-                            value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+                        <p class="h4 font-lora font-italic mb-3">Want to say hello?</p>
+                        <p>If you would like to discuss a contract opportunity or project, please get in touch.</p>
+                        <form name="contact" netlify>
+                            <div class="form-group row">
+                                <label for="input-name" class="col-sm-2 col-form-label">Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="input-name" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="input-email" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="input-email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-message">Message</label>
+                                <textarea class="form-control" id="input-message" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send message</button>
+                        </form>
                     </div>
                 </div>
             </section>
