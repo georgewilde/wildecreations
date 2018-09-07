@@ -1,7 +1,5 @@
 //@import "~bootstrap/scss/bootstrap";
 
-
-
 /* TEMP */
 .background {
     &--full {
@@ -139,4 +137,14 @@
 
 .profile-image {
     height: 400px;
+}
+
+.blog-item {
+    text-decoration: none;
+    transition: box-shadow .3s;
+
+    &:hover {
+        text-decoration: none;
+        box-shadow: 0 0 11px rgba(33,33,33,.2);
+    }
 }
