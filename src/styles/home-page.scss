@@ -145,6 +145,23 @@
 
     &:hover {
         text-decoration: none;
-        box-shadow: 0 0 11px rgba(33,33,33,.2);
+        box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    }
+}
+
+.footer {
+    &__social-link {
+        background-color: #333;
+        padding: 5px;
+        display: block;
+        border-radius: 3px;
+
+        &:hover {
+            background-color: #444;
+        }
+    }
+
+    &--dark {
+        background-color: #2a2f35;
     }
 }
