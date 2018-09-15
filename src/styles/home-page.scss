@@ -163,6 +163,12 @@
     }
 }
 
+.contact-information {
+    @include media-breakpoint-up(md) {
+        border-left: 1px solid $gray-300;
+    }
+}
+
 .footer {
     &__social-link {
         background-color: #333;
