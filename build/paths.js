@@ -22,6 +22,7 @@ module.exports = {
         ],
         pages: [
             './src/**/*.html',
+            './site.webmanifest'
         ],
     },
     dist: {

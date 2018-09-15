@@ -117,10 +117,6 @@
 .col {
     &--skills {
         min-height: calc(100vh - 104px);
-
-        .card-subtitle {
-            color: $gray-500;
-        }
     }
 
     &--about,
