@@ -154,7 +154,7 @@
                     </div>
 
                     <div class="parallax__content section--home__intro position-absolute w-100 text-white text-center text-shadow-sm">
-                        <h1 class="font-weight-bold home__intro__text animated fadeIn">
+                        <div class="h1 font-weight-bold home__intro__text animated fadeIn">
                             <div class="text-rotate">
                                 <span class="text-rotate__content text-rotate__content--first">professional</span>
                                 <span class="text-rotate__content">innovative</span>
@@ -162,7 +162,7 @@
                                 <span class="text-rotate__content">experienced</span>
                             </div>
                             front-end web development.
-                        </h1>
+                        </div>
                         <a href="#projects" class="btn btn-transparent btn-border mt-5 rounded-0 page-scroll-link">view projects</a>
                     </div>
                     <a href="#skills" class="parallax__content section--home__scroll-down h4 position-absolute text-white animated animated--slow fadeInDown infinite page-scroll-link">
@@ -177,15 +177,15 @@
 
             <section class="container-fluid" id="skills">
                 <div class="row">
-                    <div class="col col--skills bg-white">
+                    <div class="col col--skills bg-white px-sm-4">
                         <div class="row">
                             <div class="col text-center">
-                                <h1 class="mt-5">Skills & Expertise</h1>
-                                <h2 class="font-italic font-lora mb-5">front-end web development</h2>
+                                <h1 class="mt-4">Skills & Expertise</h1>
+                                <h2 class="font-italic font-lora mb-3 mb-sm-4">front-end web development</h2>
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col col-10 text-center">
+                            <div class="col">
                                 <p>Whether your project needs a top notch <span class="font-weight-bold">Angular</span> developer, a cutting edge <span class="font-weight-bold">React</span> ninja or
                                     just someone to develop some plain old <span class="font-weight-bold">JavaScript</span>, <span class="font-weight-bold">HTML</span> & <span
                                         class="font-weight-bold">CSS</span>, Wilde Creations can help you.</p>
@@ -193,7 +193,7 @@
                                     the world.</p>
                             </div>
                         </div>
-                        <div class="row mt-5">
+                        <div class="row mt-3 mt-sm-4">
                             <div class="col-md-8 offset-md-2 mb-3">
                                 <div class="card-deck">
                                     <div class="card text-center">
@@ -281,7 +281,7 @@
 
             <section class="container-fluid" id="about">
                 <div class="row">
-                    <div class="col bg-white col--about">
+                    <div class="col bg-white col--about px-sm-4">
                         <div class="row">
                             <div class="col text-center">
                                 <h1 class="mt-5">About</h1>
@@ -374,7 +374,7 @@
 
             <section class="container-fluid" id="projects">
                 <div class="row">
-                    <div class="col bg-white col--projects">
+                    <div class="col bg-white col--projects px-sm-4">
                         <h1 class="mt-4 mb-3">Projects</h1>
                         <p class="mb-3">Here are some recent projects that Wilde Creations & George Wilde have helped develop.</p>
                         <div class="card-deck mb-4">
@@ -454,7 +454,7 @@
 
             <section class="container-fluid" id="blog">
                 <div class="row">
-                    <div class="col bg-white col--blog">
+                    <div class="col bg-white col--blog px-sm-4">
                         <h1 class="mt-4 mb-3">Blog</h1>
                         <div class="card-deck mb-4">
                             <a
@@ -498,23 +498,11 @@
 
             <section class="container-fluid" id="contact">
                 <div class="row">
-                    <div class="col bg-white col--contact mb-2 mb-md-5">
+                    <div class="col bg-white col--contact mb-2 mb-md-5 px-sm-4">
                         <h1 class="mt-4 mb-3">Want to say hello?</h1>
-                        <p class="mb-5">If you would like to discuss a contract opportunity or project, please get in touch.</p>
+                        <p class="md-3 mb-sm-5">If you would like to discuss a contract opportunity or project, please get in touch.</p>
                         <div class="row">
-                            <div class="col-md-4 order-2">
-                                <div class="contact-information pl-md-4 mt-4 mt-md-0">
-                                    <p>George Wilde</p>
-                                    <p><a href="mailto:george@wildecreations.co.uk">george@wildecreations.co.uk</a></p>
-                                    <p><a href="tel:+44 (0) 7746 76 44 50">+44 (0) 7746 76 44 50</a></p>
-                                    <p>4 Yelland Walk<br>
-                                        Great Haywood<br>
-                                        Stafford<br>
-                                        UK<br>
-                                        ST18 0WJ</p>
-                                </div>
-                            </div>
-                            <div class="col-md-8 order-md-1">
+                            <div class="col-md-8">
                                 <form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
                                     <p class="sr-only">
                                         <label>Please don't fill this out if you're human, it's here to stop bots from submitting this form: <input name="bot-field"/></label>
@@ -543,6 +531,18 @@
                                         </div>
                                     </div>
                                 </form>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-information pl-md-4 mt-4 mt-md-0">
+                                    <p>George Wilde</p>
+                                    <p><a href="mailto:george@wildecreations.co.uk">george@wildecreations.co.uk</a></p>
+                                    <p><a href="tel:+44 (0) 7746 76 44 50">+44 (0) 7746 76 44 50</a></p>
+                                    <p>4 Yelland Walk<br>
+                                        Great Haywood<br>
+                                        Stafford<br>
+                                        UK<br>
+                                        ST18 0WJ</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -612,7 +612,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="row footer--dark text-white pt-3 px-3">
+            <div class="row footer--dark text-white pt-3">
                 <div class="col">
                     <p class="text-white">
                         <small>
