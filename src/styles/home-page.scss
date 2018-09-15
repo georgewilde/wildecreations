@@ -142,10 +142,20 @@
 .blog-item {
     text-decoration: none;
     transition: box-shadow .3s;
+    color: $gray-600;
 
     &:hover {
         text-decoration: none;
         box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+        color: $gray-600;
+    }
+
+    &__date {
+        color: $gray-600;
+
+        &:hover {
+            color: $gray-600;
+        }
     }
 }
 
