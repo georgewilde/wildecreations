@@ -10,18 +10,22 @@ export class LazyLoadImages {
             threshold: 0.01,
         };
 
-        const intersectionObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach((entry) => {
-                if (entry.intersectionRatio > 0) {
-                    observer.unobserve(entry.target);
-                    this.loadImage(entry.target as HTMLImageElement);
-                }
-            });
-        }, config);
+        if ('IntersectionObserver' in window) {
+            const intersectionObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.intersectionRatio > 0) {
+                        observer.unobserve(entry.target);
+                        this.loadImage(entry.target as HTMLImageElement);
+                    }
+                });
+            }, config);
 
-        imagesToLazyLoad.forEach((image) => {
-            intersectionObserver.observe(image);
-        });
+            imagesToLazyLoad.forEach((image) => {
+                intersectionObserver.observe(image);
+            });
+        } else {
+            imagesToLazyLoad.forEach((image) => this.loadImage(image as HTMLImageElement));
+        }
     }
 
     private loadImage(image: HTMLImageElement) {
