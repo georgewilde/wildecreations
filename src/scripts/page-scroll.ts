@@ -1,9 +1,9 @@
 export class PageScroll {
-    private $pageScrollLink: JQuery = $('.page-scroll-link');
-    private $window: JQuery = $(window);
-    private initialNavbarHeight: number = $('.navbar').outerHeight();
-    private smallNavbarHeight: number = 63;
-    private scrollAnimationDuration: number = 400;
+    private $pageScrollLink = $('.page-scroll-link');
+    private $window = $(window);
+    private initialNavbarHeight = $('.navbar').outerHeight();
+    private smallNavbarHeight = 63;
+    private scrollAnimationDuration = 400;
 
     public initialise() {
         this.scrollToPage();
