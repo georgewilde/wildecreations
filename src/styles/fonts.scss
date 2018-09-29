@@ -7,6 +7,7 @@
     src: url('fonts/raleway/Raleway-Thin.ttf');
     font-weight: 100;
     font-style: normal;
+    font-display: optional;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
     src: url('fonts/raleway/Raleway-ExtraLight.ttf');
     font-weight: 200;
     font-style: normal;
+    font-display: optional;
 }
 
 @font-face {
@@ -21,6 +23,7 @@
     src: url('fonts/raleway/Raleway-Light.ttf');
     font-weight: 300;
     font-style: normal;
+    font-display: optional;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
     src: url('fonts/raleway/Raleway-Regular.ttf');
     font-weight: 400;
     font-style: normal;
+    font-display: optional;
 }
 
 @font-face {
@@ -35,6 +39,7 @@
     src: url('fonts/raleway/Raleway-Medium.ttf');
     font-weight: 500;
     font-style: normal;
+    font-display: optional;
 }
 
 @font-face {
@@ -42,6 +47,7 @@
     src: url('fonts/raleway/Raleway-SemiBold.ttf');
     font-weight: 600;
     font-style: normal;
+    font-display: optional;
 }
 
 @font-face {
@@ -49,6 +55,7 @@
     src: url('fonts/raleway/Raleway-Bold.ttf');
     font-weight: 600;
     font-style: normal;
+    font-display: optional;
 }
 
 @font-face {
@@ -56,6 +63,7 @@
     src: url('fonts/raleway/Raleway-ExtraBold.ttf');
     font-weight: 800;
     font-style: normal;
+    font-display: optional;
 }
 
 @font-face {
@@ -63,6 +71,7 @@
     src: url('fonts/raleway/Raleway-Black.ttf');
     font-weight: 900;
     font-style: normal;
+    font-display: optional;
 }
 
 .font-lora {
@@ -73,4 +82,5 @@
     font-family: 'Lora';
     src: url('fonts/lora/Lora-Italic.ttf');
     font-style: italic;
+    font-display: optional;
 }
