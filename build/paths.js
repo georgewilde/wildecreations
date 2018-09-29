@@ -16,7 +16,7 @@ module.exports = {
             './src/fonts/**',
         ],
         scripts: [
-            './src/scripts/vendor/modernizr-3.5.0.min.js',
+            './src/scripts/vendor/modernizr.min.js',
             './node_modules/jquery/dist/jquery.min.js',
             './node_modules/bootstrap/dist/js/bootstrap.js'
         ],
