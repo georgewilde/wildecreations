@@ -70,7 +70,7 @@
             overflow: hidden;
 
             @include media-breakpoint-down(md) {
-                background: url("images/working.jpg") no-repeat center center;
+                background: no-repeat center center;
                 background-size: cover;
 
                 &__content {
@@ -117,6 +117,16 @@
         .background-video {
             @include media-breakpoint-down(md) {
                 background-image: url("images/working.jpf");
+            }
+        }
+    }
+}
+
+.no-webp.no-jpeg2000 {
+    .section--home {
+        .background-video {
+            @include media-breakpoint-down(md) {
+                background-image: url("images/working.jpg");
             }
         }
     }
