@@ -157,7 +157,11 @@
 }
 
 .skills-logo {
-    height: 45px;
+    height: calc(2rem + 45px);
+
+    &__icon {
+        height: 45px;
+    }
 }
 
 .profile-image {
