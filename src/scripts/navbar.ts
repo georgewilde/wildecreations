@@ -1,7 +1,7 @@
 export class Navbar {
-    private $window: JQuery = $(window);
-    private $navbar: JQuery = $('.navbar');
-    private initialNavbarHeight: number = this.$navbar.outerHeight();
+    private $window = $(window);
+    private $navbar = $('.navbar');
+    private initialNavbarHeight = this.$navbar.outerHeight();
 
     public initialise(): void {
         this.navbarResize();
@@ -9,10 +9,10 @@ export class Navbar {
 
     private navbarResize(): void {
         this.$window.on('scroll', () => {
-            const scrollTopPosition: number = this.$window.scrollTop();
-            const skillsElementVerticalPosition: number = $('#skills').offset().top - this.initialNavbarHeight;
-            const scrollPositionOffset: number = -1;
-            const navbarSizeOffset: number = 10;
+            const scrollTopPosition = this.$window.scrollTop();
+            const skillsElementVerticalPosition = $('#skills').offset().top - this.initialNavbarHeight;
+            const scrollPositionOffset = -1;
+            const navbarSizeOffset = 10;
 
             if (scrollTopPosition + scrollPositionOffset <= skillsElementVerticalPosition) {
                 this.makeNavbarBigAndTransparent();
@@ -28,7 +28,7 @@ export class Navbar {
         });
     }
 
-    private makeNavbarOpaque(): void {
+    private makeNavbarOpaque() {
         this.$navbar
             .addClass('bg-white')
             .removeClass('bg-transparent');
@@ -36,11 +36,11 @@ export class Navbar {
         $('.nav-link, .navbar-toggler-icon').removeClass('text-white');
     }
 
-    private makeNavbarSmall(): void {
+    private makeNavbarSmall() {
         this.$navbar.addClass('navbar--small');
     }
 
-    private makeNavbarBigAndTransparent(): void {
+    private makeNavbarBigAndTransparent() {
         this.$navbar
             .removeClass('bg-white')
             .addClass('bg-transparent')
