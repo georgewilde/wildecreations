@@ -1,7 +1,7 @@
 export class Video {
     private $video = $('#backgroundVideo') as JQuery<HTMLVideoElement>;
-    private $pauseButton: JQuery = $('#pauseButton');
-    private $playButton: JQuery = $('#playButton');
+    private $pauseButton = $('#pauseButton');
+    private $playButton = $('#playButton');
 
     public initialise() {
         this.addVideoControls();

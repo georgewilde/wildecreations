@@ -10,11 +10,11 @@ export class PageScroll {
         this.highlightCurrentLink();
     }
 
-    private scrollToPage(): void {
+    private scrollToPage() {
         this.$pageScrollLink.on('click', (event: any) => {
             event.preventDefault();
 
-            const target: string = event.currentTarget.hash;
+            const target = event.currentTarget.hash;
             let navigationOffset: number;
 
             switch (target) {
@@ -37,7 +37,7 @@ export class PageScroll {
         });
     }
 
-    private highlightCurrentLink(): void {
+    private highlightCurrentLink() {
         this.$window.on('scroll', () => {
             const scrollbarLocation = this.$window.scrollTop();
 

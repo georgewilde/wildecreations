@@ -1,20 +1,20 @@
 export class Parallex {
-    private $window: JQuery = $(window);
+    private $window = $(window);
 
-    public initialise(): void {
+    public initialise() {
        this.background();
        this.content();
     }
 
-    private background(): void {
-        const $window: JQuery = $(window);
+    private background() {
+        const $window = $(window);
         let scrollTop: number = window.pageYOffset || document.documentElement.scrollTop;
 
-        $window.on('scroll resize', (): void => {
+        $window.on('scroll resize', () => {
             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         });
 
-        $('#parallaxBackground').each((index: number, element: HTMLElement): void => {
+        $('#parallaxBackground').each((index: number, element: HTMLElement) => {
             $window.on('scroll resize', () => {
                 $(element).css({transform: `translateY(-${scrollTop * 0.5}px)`});
             });
@@ -23,8 +23,7 @@ export class Parallex {
         $window.trigger('scroll');
     }
 
-
-    private content(): void {
+    private content() {
         this.$window.on('scroll', () => {
             const opacity = 1.1 - (this.$window.scrollTop() / 500);
 

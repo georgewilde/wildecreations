@@ -9,8 +9,8 @@ export class TextRotator {
         this.pauseSpeed = 2000;
     }
 
-    public initialise(): void {
-        $('.text-rotate').each((rotateIndex, rotateElement): void => {
+    public initialise() {
+        $('.text-rotate').each((rotateIndex, rotateElement) => {
             this.$rotateElement = $(rotateElement);
             this.rotateTextItems();
         });
@@ -20,7 +20,7 @@ export class TextRotator {
         return rotateElement.children(':first');
     }
 
-    private rotateTextItems(): void {
+    private rotateTextItems() {
         let nextTextItem: JQuery;
 
         if (!this.$textItem) {
@@ -29,8 +29,8 @@ export class TextRotator {
             nextTextItem = this.$textItem;
         }
 
-        $(nextTextItem).fadeIn(this.fadeSpeed, (): void => {
-            $(nextTextItem).delay(this.pauseSpeed).fadeOut(this.fadeSpeed, (): void => {
+        $(nextTextItem).fadeIn(this.fadeSpeed, () => {
+            $(nextTextItem).delay(this.pauseSpeed).fadeOut(this.fadeSpeed, () => {
                 this.$textItem = $(nextTextItem).next();
 
                 if (this.$textItem.length === 0) {
