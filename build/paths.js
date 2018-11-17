@@ -22,7 +22,10 @@ module.exports = {
         ],
         pages: [
             './src/**/*.html',
-            './site.webmanifest'
+            './site.webmanifest',
+            './src/workbox-sw.js',
+            './src/sw.js',
+            './_headers'
         ],
     },
     dist: {
