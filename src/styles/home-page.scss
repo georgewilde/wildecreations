@@ -2,6 +2,7 @@
 
 .navbar {
     border-bottom-color: rgba(255, 255, 255, 0.15) !important;
+    padding: .5rem 0;
 
     &:not(.bg-white) {
         .navbar-toggler {
@@ -14,12 +15,20 @@
         }
     }
 
-    .nav-link {
-        @include media-breakpoint-down(md) {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-        }
+    .navbar-brand {
+        margin-left: .5rem;
     }
+
+    .navbar-toggler {
+        margin-right: .5rem;
+    }
+
+        .nav-link {
+            @include media-breakpoint-down(md) {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+        }
 
     .logo {
         @include media-breakpoint-only(md) {
@@ -38,6 +47,16 @@
         .nav-link {
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
+        }
+    }
+
+    .navbar-collapse {
+        background-color: #FFFFFF;
+        margin-top: 7px;
+
+        @include media-breakpoint-up(md) {
+            background-color: transparent;
+            margin-top: 0;
         }
     }
 }
