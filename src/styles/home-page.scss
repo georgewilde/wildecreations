@@ -205,6 +205,18 @@
     }
 }
 
+.testimonial {
+    text-align: center;
+
+    &__image {
+        border-radius: 50%;
+    }
+
+    &__name {
+        margin-top: 10px;
+    }
+}
+
 .contact-information {
     @include media-breakpoint-up(md) {
         border-left: 1px solid $gray-300;
