@@ -208,6 +208,11 @@
 .testimonial {
   text-align: center;
 
+  &__text {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+  }
+
   &__image {
     border-radius: 50%;
   }
